@@ -1,7 +1,7 @@
 package goclock
 
 
-import "constants"
+import "github.com/royels/constants"
 
 
 func UpdateClockDecimalValue(clockVal *int, updateAmt int, maxVal int) int {

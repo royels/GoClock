@@ -2,7 +2,7 @@ package goclock
 
 
 import "fmt"
-import "constants"
+import "github.com/royels/constants"
 
 func Usage (programName string) {
   fmt.Printf(STR_USAGE, programName,

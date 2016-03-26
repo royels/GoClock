@@ -1,7 +1,7 @@
 package goclock
 
 func CheckRange(minRange, offset, value int) int {
-	if(isNegative(offset) == 1) {
+	if(IsNegative(offset) == 1) {
 		return -1
 	}
 	sum :=  minRange + offset
@@ -10,8 +10,7 @@ func CheckRange(minRange, offset, value int) int {
 	}
 	if value > sum {
 		return 0
-	} 
-	else {
+	} else {
 		return 1
 	}
 }

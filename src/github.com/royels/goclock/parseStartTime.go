@@ -1,7 +1,7 @@
 package goclock
 
 
-import "constants"
+import "github.com/royels/constants"
 import "strings"
 import "strconv"
 
