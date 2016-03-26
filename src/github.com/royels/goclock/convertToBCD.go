@@ -3,7 +3,7 @@ package goclock
 
 import "github.com/royels/constants"
 
-func ConvertToBCD(clockDecimal [] int, clockBCD []int) {
+func ConvertToBCD(clockDecimal [3] int, clockBCD [3]int) {
 	go craftBCD(clockDecimal[constants.HR_INDEX],  &clockBCD[constants.HR_INDEX])
 	go craftBCD(clockDecimal[constants.MIN_INDEX], &clockBCD[constants.MIN_INDEX])
 	go craftBCD(clockDecimal[constants.SEC_INDEX], &clockBCD[constants.SEC_INDEX])

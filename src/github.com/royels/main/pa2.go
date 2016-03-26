@@ -4,7 +4,7 @@ import "fmt"
 import "github.com/royels/constants"
 import "github.com/royels/goclock"
 import "os"
-import "strconv"
+//import "strconv"
 
 func main() {
 	numTicks := constants.DEF_TICKS	
@@ -18,7 +18,7 @@ func main() {
 	var clockDecimal [constants.LIST_LENGTH]int
 	returnVal = goclock.ParseStartTime(clockDecimal, os.Args[constants.TIME_INDEX])
 	if (returnVal&constants.ERR_TIME_FORMAT) != 0 {
-		fmt.Fprintf(os.stderr, constants.STR_ERR_TIME_FORMAT)
+		fmt.Fprintf(os.Stderr, constants.STR_ERR_TIME_FORMAT)
 	}
 	// implement error handling. Too bored at this stage in the night to do it....
 	// intervalSeconds, err := strconv.Atoi(os.Args[constants.INTERVAL_INDEX])

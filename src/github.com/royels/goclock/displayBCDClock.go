@@ -6,7 +6,7 @@ import "github.com/royels/constants"
 
 
 
-func displayBCDClock(clockBCD []int) {
+func DisplayBCDClock(clockBCD [3]int) {
 	temp1 := constants.FIRST_BITMASK
 	temp2 := constants.SECOND_BITMASK
 	for i := 0; i < constants.ROW_LENGTH; i++ {
