@@ -5,7 +5,7 @@ import "fmt"
 import "github.com/royels/constants"
 
 func Usage (programName string) {
-  fmt.Printf(STR_USAGE, programName,
+  fmt.Printf(constants.STR_USAGE, programName,
   constants.MIN_HR, constants.MAX_HR - 1,
   constants.MIN_MINUTE, constants.MAX_MINUTE - 1,
   constants.MIN_SEC, constants.MAX_SEC - 1,

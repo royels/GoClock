@@ -3,6 +3,6 @@ package goclock
 import "fmt"
 
 
-func PrintChar(x string) {
-	fmt.Printf(x)
+func PrintChar(x rune) {
+	fmt.Printf("%c", x)
 }

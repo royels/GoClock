@@ -10,9 +10,9 @@ func ConvertToBCD(clockDecimal [] int, clockBCD []int) {
 }
 
 func craftBCD(src int, dest *int) {
-	rem = src % 10
-	div = src / 10
-	temp1 = div << 4
-	temp2 = temp1 | div
+	rem := src % 10
+	div := src / 10
+	temp1 := div << 4
+	temp2 := temp1|rem 
 	*dest = temp2
 }
