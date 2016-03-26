@@ -1,7 +1,7 @@
 package goclock
 
 
-func IsNegative(value int) {
+func IsNegative(value int) int{
 	if value > 0 {
 		return 0
 	}

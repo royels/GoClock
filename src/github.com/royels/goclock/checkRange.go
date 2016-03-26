@@ -1,6 +1,6 @@
 package goclock
 
-func CheckRange(minRange, offset, value int) {
+func CheckRange(minRange, offset, value int) int {
 	if(isNegative(offset) == 1) {
 		return -1
 	}

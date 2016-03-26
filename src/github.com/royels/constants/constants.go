@@ -1,5 +1,6 @@
 package constants 
 
+
 const(
 		MIN_ARGS = 2
 		MAX_ARGS = 4
@@ -60,4 +61,19 @@ ERR_SEC_RANGE  = 0x40 /* Sec value out of range */
 
 
 )
+
+type CategoryInfo struct {
+	MIN_VAL int
+	OFFSET int
+	ERR_VAL int
+	ERR_RANGE int	
+}
+
+var (
+	HR = &CategoryInfo{MIN_HR, HR_OFFSET, ERR_HR_VALUE, ERR_HR_RANGE}
+	MIN = &CategoryInfo{MIN_MINUTE, MINUTE_OFFSET, ERR_MIN_VALUE, ERR_MIN_RANGE}
+	SEC = &CategoryInfo{MIN_SEC, SEC_OFFSET, ERR_SEC_VALUE, ERR_SEC_RANGE}
+)
+
+
 
