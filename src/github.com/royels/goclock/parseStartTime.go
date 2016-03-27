@@ -4,12 +4,14 @@ package goclock
 import "github.com/royels/constants"
 import "strings"
 import "strconv"
+import "fmt"
 
 func ParseStartTime(clockDecimal [3]int, time string) int {
   x:= strings.Split(time, constants.TIME_STR_DELIMITER)
   if len(x) != constants.REQ_SEPARATORS {
     return constants.ERR_TIME_FORMAT
   }
+	fmt.Printf("%q\n", x) 
   d := make(chan int)
   go vetTime(&clockDecimal[constants.HR_INDEX], x[constants.HR_INDEX],   constants.HR, d)
   go vetTime(&clockDecimal[constants.MIN_INDEX], x[constants.MIN_INDEX], constants.MIN, d)
