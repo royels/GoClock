@@ -8,7 +8,7 @@ import "fmt"
 
 func ParseStartTime(clockDecimal [3]int, time string) int {
   x:= strings.Split(time, constants.TIME_STR_DELIMITER)
-  if len(x) != constants.REQ_SEPARATORS {
+  if len(x) != constants.REQ_SEPARATORS + 1 {
     return constants.ERR_TIME_FORMAT
   }
 	fmt.Printf("%q\n", x) 
