@@ -17,9 +17,8 @@ func main() {
 	var returnVal int
 	var clockDecimal [constants.LIST_LENGTH]int
 	returnVal = goclock.ParseStartTime(clockDecimal, os.Args[constants.TIME_INDEX])
-	fmt.Printf("%q", returnVal)
 	if (returnVal & constants.ERR_TIME_FORMAT) != 0 {
-//		fmt.Fprintf(os.Stderr, constants.STR_ERR_TIME_FORMAT)
+		fmt.Fprintf(os.Stderr, constants.STR_ERR_TIME_FORMAT)
 	} else {
 	// implement error handling. Too bored at this stage in the night to do it....
 	// intervalSeconds, err := strconv.Atoi(os.Args[constants.INTERVAL_INDEX])
