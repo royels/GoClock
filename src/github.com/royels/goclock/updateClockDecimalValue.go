@@ -1,5 +1,6 @@
 package goclock
 
+//import "fmt"
 
 func UpdateClockDecimalValue(clockVal *int, updateAmt int, maxVal int) int {
 	remnant := (*clockVal + updateAmt) % maxVal

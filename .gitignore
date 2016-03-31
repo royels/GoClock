@@ -3,7 +3,7 @@
 bin/
 *.a
 *.so
-./pa2
+pa2
 
 # Folders
 _obj

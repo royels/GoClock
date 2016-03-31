@@ -51,13 +51,13 @@ LIT_LED ='O'
 UNLIT_LED= '.'
 
 
-ERR_TIME_FORMAT=  0x1 /* Invalid start time string */
-ERR_HR_VALUE   =  0x2 /* Hour value invalid */
-ERR_HR_RANGE   =  0x4 /* Hour value out of range */
-ERR_MIN_VALUE  =  0x8 /* Min value invalid */
-ERR_MIN_RANGE  = 0x10 /* Min value out of range */
-ERR_SEC_VALUE  = 0x20 /* Sec value invalid */
-ERR_SEC_RANGE  = 0x40 /* Sec value out of range */
+ERR_TIME_FORMAT=  0x1 
+ERR_HR_VALUE   =  0x2 
+ERR_HR_RANGE   =  0x4 
+ERR_MIN_VALUE  =  0x8 
+ERR_MIN_RANGE  = 0x10 
+ERR_SEC_VALUE  = 0x20 
+ERR_SEC_RANGE  = 0x40 
 
 
 )
