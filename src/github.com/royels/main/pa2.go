@@ -7,8 +7,8 @@ import "os"
 //import "strconv"
 
 func main() {
-//	numTicks := constants.DEF_TICKS	
-//	intervalSeconds := constants.DEF_INTERVALS
+	numTicks := constants.DEF_TICKS	
+	intervalSeconds := constants.DEF_INTERVALS
 	
 	if len(os.Args) < constants.MIN_ARGS || len(os.Args) > constants.MAX_ARGS {
 		goclock.Usage(os.Args[0])
@@ -27,7 +27,7 @@ func main() {
 	goclock.ConvertToBCD(clockDecimal, &clockBCD)
 	goclock.DisplayBCDClock(clockBCD)
 	for i := 0; i < numTicks; i++ {
-		goclock.UpdateClockDecimal(clockDecimal, intervalSeconds)
+		goclock.UpdateClockDecimal(&clockDecimal, intervalSeconds)
 		goclock.ConvertToBCD(clockDecimal, &clockBCD)
 		goclock.DisplayBCDClock(clockBCD)
 	}
