@@ -2,7 +2,7 @@
 
 I'll be using one of my old systems programming assignments as a base with which to create this (won't be translated code, but definitely...inspired.)
 
-This project is essentially a binary decimal clock implemented in Go(lang). 
+This project is essentially a binary decimal clock implemented in Go(lang). Essentially a slightly more involved Hello World.
 
 To create: Build executable with `go build ~/path/to/main/dir/pa2.go` or `go install github.com/royels/main` with your $GOPATH set to `~/project/`, then run.
 
